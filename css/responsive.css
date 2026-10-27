@@ -1,0 +1,798 @@
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .property-container,
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .property-container,
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-section h2,
+    .properties-section h2,
+    .features-section h2 {
+        font-size: 27px;
+    }
+}
+/* ABOUT PAGE RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+        padding: 60px 6%;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-text h2 {
+        font-size: 29px;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .technology-container {
+        gap: 12px;
+    }
+
+    .tech-card {
+        padding: 16px 22px;
+    }
+}
+/* LOGIN RESPONSIVE */
+
+@media (max-width: 850px) {
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-image {
+        min-height: 250px;
+        padding: 30px;
+    }
+
+    .login-image-content h1 {
+        font-size: 28px;
+    }
+
+    .login-form-container {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 25px 15px;
+    }
+
+    .login-image {
+        min-height: 200px;
+    }
+
+    .login-form-container {
+        padding: 35px 20px;
+    }
+
+    .login-form-box h2 {
+        font-size: 27px;
+    }
+}
+/* REGISTRATION RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .register-container {
+        grid-template-columns: 1fr;
+    }
+
+    .register-image {
+        min-height: 300px;
+        padding: 35px;
+    }
+
+    .register-image-content h1 {
+        font-size: 32px;
+    }
+
+    .register-form-container {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .register-page {
+        padding: 25px 15px;
+    }
+
+    .register-image {
+        min-height: 250px;
+        padding: 25px;
+    }
+
+    .register-image-content h1 {
+        font-size: 27px;
+    }
+
+    .register-form-container {
+        padding: 35px 20px;
+    }
+
+    .register-form-box h2 {
+        font-size: 27px;
+    }
+}
+
+/* PROPERTIES PAGE RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .listing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 850px) {
+    .listing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .listing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .listing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .results-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .properties-hero h1 {
+        font-size: 32px;
+    }
+
+    .listing-layout {
+        padding: 30px 5%;
+    }
+}
+
+/* PREDICTION RESPONSIVE */
+
+@media (max-width: 850px) {
+    .prediction-container {
+        grid-template-columns: 1fr;
+    }
+
+    .prediction-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .prediction-hero h1 {
+        font-size: 30px;
+    }
+
+    .prediction-card,
+    .prediction-result-card {
+        padding: 23px;
+    }
+
+    .prediction-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .prediction-result {
+        font-size: 25px;
+    }
+}
+
+/* RECOMMENDATION RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .recommendation-container {
+        grid-template-columns: 260px minmax(0, 1fr);
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .recommendation-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .recommendation-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 580px) {
+    .recommendation-hero h1 {
+        font-size: 30px;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-results-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .recommendation-results-heading select {
+        width: 100%;
+    }
+}
+
+/* BUY PAGE RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .buy-search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buy-property-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .buy-hero h1 {
+        font-size: 34px;
+    }
+
+    .buy-search-form,
+    .buy-property-grid,
+    .buy-guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .buy-search-button {
+        width: 100%;
+    }
+
+    .buy-section-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .buy-section-heading select {
+        width: 100%;
+    }
+
+    .buy-listings {
+        margin-top: 50px;
+    }
+}
+
+/* RENT PAGE RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .rent-search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rent-property-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .rent-hero h1 {
+        font-size: 32px;
+    }
+
+    .rent-search-form,
+    .rent-property-grid,
+    .rent-guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rent-search-button {
+        width: 100%;
+    }
+
+    .rent-section-heading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rent-section-heading select {
+        width: 100%;
+    }
+
+    .rent-listings {
+        margin-top: 50px;
+    }
+}
+
+/* SELL PAGE RESPONSIVE */
+
+@media (max-width: 900px) {
+    .sell-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sell-saved-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .sell-hero h1 {
+        font-size: 31px;
+    }
+
+    .sell-form-card,
+    .sell-preview-card,
+    .sell-help-card {
+        padding: 22px;
+    }
+
+    .sell-row,
+    .sell-saved-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sell-form-actions {
+        flex-direction: column;
+    }
+}
+/* =========================================
+   LOAN PAGE - RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .loan-container {
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    .loan-calculator-card {
+        padding: 28px;
+    }
+
+    .loan-result-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .loan-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .loan-hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .loan-hero h1 {
+        font-size: 30px;
+    }
+
+    .loan-hero p {
+        font-size: 15px;
+    }
+
+    .loan-container {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .loan-calculator-card {
+        padding: 22px;
+    }
+
+    .loan-calculator-card h2 {
+        font-size: 22px;
+    }
+
+    .loan-form {
+        grid-template-columns: 1fr;
+    }
+
+    .loan-form-group {
+        width: 100%;
+    }
+
+    .loan-form-group input,
+    .loan-form-group select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .loan-calculate-button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .loan-result-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .loan-result-item {
+        padding: 18px;
+    }
+
+    .loan-info {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .loan-info article {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================
+   FAVORITES PAGE - RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .favorites-container {
+        width: 92%;
+    }
+
+    .favorites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorites-hero h1 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .favorites-hero {
+        padding: 60px 20px;
+    }
+
+    .favorites-hero h1 {
+        font-size: 30px;
+    }
+
+    .favorites-hero p {
+        font-size: 15px;
+    }
+
+    .favorites-container {
+        width: 94%;
+        margin: 35px auto;
+    }
+
+    .favorites-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .favorites-heading h2 {
+        font-size: 25px;
+    }
+
+    .clear-favorites-button {
+        width: 100%;
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favorite-card-image {
+        height: 220px;
+    }
+
+    .empty-favorites {
+        padding: 50px 18px;
+    }
+
+    .empty-favorites h3 {
+        font-size: 22px;
+    }
+}
+
+/* =========================================
+   CONTACT PAGE - RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        width: 92%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-info {
+        padding: 10px 0;
+    }
+
+    .contact-hero h1 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        padding: 60px 20px;
+    }
+
+    .contact-hero h1 {
+        font-size: 30px;
+    }
+
+    .contact-hero p {
+        font-size: 15px;
+    }
+
+    .contact-container {
+        width: 94%;
+        margin: 35px auto;
+    }
+
+    .contact-info h2 {
+        font-size: 27px;
+    }
+
+    .contact-form-card {
+        padding: 22px;
+    }
+
+    .contact-form-card h2 {
+        font-size: 23px;
+    }
+
+    .contact-info-item {
+        gap: 12px;
+    }
+
+    .contact-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .contact-submit-button {
+        padding: 13px;
+    }
+}/* =========================================================
+   FAVORITES PAGE - RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .favorites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorites-hero h1 {
+        font-size: 40px;
+    }
+
+    .favorites-container {
+        padding: 55px 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .favorites-hero {
+        padding: 60px 20px;
+    }
+
+    .favorites-hero h1 {
+        font-size: 32px;
+    }
+
+    .favorites-hero p {
+        font-size: 16px;
+    }
+
+    .favorites-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clear-favorites-button {
+        width: 100%;
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favorite-card-image {
+        height: 210px;
+    }
+
+    .favorite-card-actions {
+        flex-direction: column;
+    }
+
+    .favorite-view-button,
+    .favorite-remove-button {
+        width: 100%;
+    }
+
+    .empty-favorites {
+        padding: 50px 20px;
+    }
+
+    .empty-favorites h3 {
+        font-size: 23px;
+    }
+
+    .favorites-heading h2 {
+        font-size: 27px;
+    }
+}
+/* =========================================================
+   RECOMMENDATION PAGE - RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .recommendation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recommendation-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recommendation-hero h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .recommendation-hero {
+        padding: 65px 20px;
+    }
+
+    .recommendation-hero h1 {
+        font-size: 32px;
+    }
+
+    .recommendation-hero p {
+        font-size: 16px;
+    }
+
+    .recommendation-container {
+        padding: 45px 16px;
+    }
+
+    .recommendation-filter-card {
+        padding: 25px 20px;
+    }
+
+    #recommendationForm {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .recommendation-results-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #recommendationSort {
+        width: 100%;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-info {
+        padding: 15px 16px 50px;
+    }
+
+    .recommendation-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-results-heading h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .recommendation-hero h1 {
+        font-size: 28px;
+    }
+
+    .recommendation-tag {
+        font-size: 12px;
+    }
+
+    .recommendation-filter-card h2 {
+        font-size: 25px;
+    }
+
+    .recommendation-card-image {
+        height: 190px;
+    }
+
+    .recommendation-card-content {
+        padding: 18px;
+    }
+}

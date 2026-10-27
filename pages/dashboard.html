@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="../index.html" class="sidebar-logo">
+                RealEstate<span>AI</span>
+            </a>
+
+            <nav class="sidebar-menu"
+                 aria-label="Dashboard navigation">
+
+                <a href="dashboard.html" class="active">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="properties.html">
+                    <span>⌂</span> Properties
+                </a>
+
+                <a href="prediction.html">
+                    <span>▥</span> Price Prediction
+                </a>
+
+                <a href="recommendation.html">
+                    <span>✦</span> Recommendations
+                </a>
+
+                <a href="buy.html">
+                    <span>🏠</span> Buy Property
+                </a>
+
+                <a href="rent.html">
+                    <span>⌂</span> Rent Property
+                </a>
+
+                <a href="sell.html">
+                    <span>＋</span> Sell Property
+                </a>
+
+                <a href="loan.html">
+                    <span>▤</span> Loan Calculator
+                </a>
+
+                <a href="favorites.html">
+                    <span>♡</span> Saved Properties
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="../index.html">
+                    ← Back to Home
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- MAIN DASHBOARD -->
+        <main class="dashboard-main">
+
+            <!-- TOP BAR -->
+            <header class="dashboard-header">
+
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>
+                        Welcome to your real estate dashboard.
+                    </p>
+                </div>
+
+                <div class="dashboard-user">
+                    <div class="user-avatar">U</div>
+                    <span>Demo User</span>
+                </div>
+
+            </header>
+
+            <!-- WELCOME BANNER -->
+            <section class="welcome-banner">
+
+                <div>
+                    <h2>Find Your Dream Property</h2>
+
+                    <p>
+                        Explore properties, predict house
+                        prices and get personalized
+                        recommendations.
+                    </p>
+
+                    <a href="properties.html"
+                       class="dashboard-white-btn">
+                        Explore Properties
+                    </a>
+                </div>
+
+                <div class="welcome-icon"
+                     aria-hidden="true">
+                    🏡
+                </div>
+
+            </section>
+
+            <!-- STATISTICS -->
+            <section class="dashboard-section">
+
+                <h2>Property Overview</h2>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-icon blue">🏠</div>
+
+                        <p>Total Properties</p>
+
+                        <h3>120</h3>
+
+                        <small>Sample listing data</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">♡</div>
+
+                        <p>Saved Properties</p>
+
+                        <h3 id="savedCount">0</h3>
+
+                        <small>Your saved properties</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">📊</div>
+
+                        <p>Price Predictions</p>
+
+                        <h3>0</h3>
+
+                        <small>ML integration pending</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">✨</div>
+
+                        <p>Recommendations</p>
+
+                        <h3>0</h3>
+
+                        <small>Recommendation engine pending</small>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- QUICK ACTIONS -->
+            <section class="dashboard-section">
+
+                <h2>Quick Actions</h2>
+
+                <div class="actions-grid">
+
+                    <a href="prediction.html"
+                       class="action-card">
+
+                        <div class="action-icon">📈</div>
+
+                        <h3>Predict House Price</h3>
+
+                        <p>
+                            Estimate the value of a
+                            property using machine learning.
+                        </p>
+
+                        <span>Predict Now →</span>
+
+                    </a>
+
+                    <a href="recommendation.html"
+                       class="action-card">
+
+                        <div class="action-icon">✨</div>
+
+                        <h3>Get Recommendations</h3>
+
+                        <p>
+                            Find properties that match
+                            your budget and preferences.
+                        </p>
+
+                        <span>Explore Now →</span>
+
+                    </a>
+
+                    <a href="loan.html"
+                       class="action-card">
+
+                        <div class="action-icon">💰</div>
+
+                        <h3>Loan Calculator</h3>
+
+                        <p>
+                            Calculate estimated monthly
+                            home loan payments.
+                        </p>
+
+                        <span>Calculate Now →</span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- FEATURED PROPERTIES -->
+            <section class="dashboard-section">
+
+                <div class="section-heading">
+
+                    <h2>Featured Properties</h2>
+
+                    <a href="properties.html">
+                        View All →
+                    </a>
+
+                </div>
+
+                <div class="dashboard-properties">
+
+                    <article class="dashboard-property">
+
+                        <img
+                            src="../images/r9.webp"
+                            alt="Modern apartment"
+                        >
+
+                        <div class="dashboard-property-info">
+
+                            <span class="property-tag">
+                                For Sale
+                            </span>
+
+                            <h3>Modern Apartment</h3>
+
+                            <p>📍 Chennai, Tamil Nadu</p>
+
+                            <h3 class="dashboard-price">
+                                ₹45,00,000
+                            </h3>
+
+                            <p>3 BHK | 1500 Sq.ft</p>
+
+                            <a href="properties.html">
+                                View Properties →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="dashboard-property">
+
+                        <img
+                            src="../images/r2.webp"
+                            alt="Luxury villa"
+                        >
+
+                        <div class="dashboard-property-info">
+
+                            <span class="property-tag">
+                                For Sale
+                            </span>
+
+                            <h3>Luxury Villa</h3>
+
+                            <p>📍 Bangalore, Karnataka</p>
+
+                            <h3 class="dashboard-price">
+                                ₹95,00,000
+                            </h3>
+
+                            <p>4 BHK | 2400 Sq.ft</p>
+
+                            <a href="properties.html">
+                                View Properties →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="dashboard-property">
+
+                        <img
+                            src="../images/r4.jpg"
+                            alt="Family house"
+                        >
+
+                        <div class="dashboard-property-info">
+
+                            <span class="property-tag">
+                                For Sale
+                            </span>
+
+                            <h3>Family House</h3>
+
+                            <p>📍 Coimbatore, Tamil Nadu</p>
+
+                            <h3 class="dashboard-price">
+                                ₹60,00,000
+                            </h3>
+
+                            <p>3 BHK | 1800 Sq.ft</p>
+
+                            <a href="properties.html">
+                                View Properties →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- RECENT ACTIVITY -->
+            <section class="dashboard-section">
+
+                <h2>Recent Activity</h2>
+
+                <div class="activity-card">
+
+                    <div class="activity-item">
+                        <div class="activity-icon">🏠</div>
+
+                        <div>
+                            <h4>Explore Properties</h4>
+                            <p>
+                                Browse available property
+                                listings.
+                            </p>
+                        </div>
+
+                        <a href="properties.html">
+                            Explore
+                        </a>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">📊</div>
+
+                        <div>
+                            <h4>House Price Prediction</h4>
+                            <p>
+                                Estimate a property's
+                                market price.
+                            </p>
+                        </div>
+
+                        <a href="prediction.html">
+                            Predict
+                        </a>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">♡</div>
+
+                        <div>
+                            <h4>Saved Properties</h4>
+                            <p>
+                                View properties you've
+                                added to your favorites.
+                            </p>
+                        </div>
+
+                        <a href="favorites.html">
+                            View
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer class="dashboard-footer">
+                © 2026 RealEstateAI. All rights reserved.
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Property Recommendations | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="prediction.html">Predict Price</a>
+            <a href="recommendation.html" class="active">
+                Recommendations
+            </a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="recommendation-hero">
+        <span class="recommendation-tag">
+            SMART PROPERTY MATCHING
+        </span>
+
+        <h1>Find Your Perfect Property</h1>
+
+        <p>
+            Tell us what you're looking for and discover
+            properties that match your preferences.
+        </p>
+    </section>
+
+    <main class="recommendation-container">
+
+        <!-- PREFERENCES -->
+        <section class="recommendation-filter-card">
+
+            <h2>Your Preferences</h2>
+
+            <p>
+                Customize your search to find
+                suitable properties.
+            </p>
+
+            <form id="recommendationForm">
+
+                <div class="recommendation-field">
+                    <label for="recCity">
+                        Preferred Location
+                    </label>
+
+                    <select id="recCity">
+                        <option value="">All Cities</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Madurai">Madurai</option>
+                    </select>
+                </div>
+
+                <div class="recommendation-field">
+                    <label for="recType">
+                        Property Type
+                    </label>
+
+                    <select id="recType">
+                        <option value="">Any Type</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Independent House">
+                            Independent House
+                        </option>
+                    </select>
+                </div>
+
+                <div class="recommendation-field">
+                    <label for="recBudget">
+                        Maximum Budget
+                    </label>
+
+                    <select id="recBudget">
+                        <option value="">Any Budget</option>
+                        <option value="2500000">
+                            Up to ₹25 Lakh
+                        </option>
+                        <option value="5000000">
+                            Up to ₹50 Lakh
+                        </option>
+                        <option value="7500000">
+                            Up to ₹75 Lakh
+                        </option>
+                        <option value="10000000">
+                            Up to ₹1 Crore
+                        </option>
+                        <option value="15000000">
+                            Up to ₹1.5 Crore
+                        </option>
+                    </select>
+                </div>
+
+                <div class="recommendation-field">
+                    <label for="recBedrooms">
+                        Minimum Bedrooms
+                    </label>
+
+                    <select id="recBedrooms">
+                        <option value="">Any</option>
+                        <option value="1">1+ BHK</option>
+                        <option value="2">2+ BHK</option>
+                        <option value="3">3+ BHK</option>
+                        <option value="4">4+ BHK</option>
+                    </select>
+                </div>
+
+                <button
+                    type="submit"
+                    class="recommendation-submit"
+                >
+                    Find Matching Properties
+                </button>
+
+                <button
+                    type="reset"
+                    class="recommendation-reset"
+                >
+                    Clear Filters
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- RECOMMENDATIONS -->
+        <section class="recommendation-results">
+
+            <div class="recommendation-results-heading">
+
+                <div>
+                    <h2>Recommended For You</h2>
+
+                    <p id="recommendationCount">
+                        Choose your preferences to begin.
+                    </p>
+                </div>
+
+                <select
+                    id="recommendationSort"
+                    aria-label="Sort recommendations"
+                >
+                    <option value="match">
+                        Best Match
+                    </option>
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+                    <option value="area">
+                        Largest Area
+                    </option>
+                </select>
+
+            </div>
+
+            <div
+                id="recommendationGrid"
+                class="recommendation-grid"
+                aria-live="polite"
+            ></div>
+
+            <div
+                id="recommendationEmpty"
+                class="recommendation-empty"
+                hidden
+            >
+                <div>🏡</div>
+
+                <h3>No Matching Properties</h3>
+
+                <p>
+                    Try increasing your budget or
+                    selecting a different location.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- INFORMATION -->
+    <section class="recommendation-info">
+
+        <h2>How Our Recommendations Work</h2>
+
+        <div class="recommendation-info-grid">
+
+            <article>
+                <span>📍</span>
+                <h3>Location Matching</h3>
+                <p>
+                    Find properties in your preferred city.
+                </p>
+            </article>
+
+            <article>
+                <span>💰</span>
+                <h3>Budget Matching</h3>
+                <p>
+                    Explore properties within your
+                    selected price range.
+                </p>
+            </article>
+
+            <article>
+                <span>🏠</span>
+                <h3>Property Preferences</h3>
+                <p>
+                    Match property type and bedroom
+                    requirements.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <h2>RealEstateAI</h2>
+        <p>
+            House Price Prediction and
+            Property Recommendation System
+        </p>
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="../js/recommendation.js"></script>
+
+</body>
+</html>

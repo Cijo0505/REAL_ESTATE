@@ -1,0 +1,742 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sell Property | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="buy.html">Buy</a>
+            <a href="rent.html">Rent</a>
+            <a href="sell.html" class="active">Sell</a>
+            <a href="prediction.html">Predict Price</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+    </header>
+
+    <!-- HERO -->
+    <section class="sell-hero">
+
+        <span class="sell-tag">
+            LIST YOUR PROPERTY
+        </span>
+
+        <h1>Sell Your Property</h1>
+
+        <p>
+            Create your property listing in a few
+            simple steps and preview how it will look.
+        </p>
+
+    </section>
+
+    <!-- MAIN -->
+    <main class="sell-container">
+
+        <!-- PROPERTY FORM -->
+        <section class="sell-form-card">
+
+            <div class="sell-section-heading">
+                <h2>Property Information</h2>
+
+                <p>
+                    Enter the details of the property
+                    you want to sell.
+                </p>
+            </div>
+
+            <form id="sellForm">
+
+                <div class="sell-field">
+                    <label for="sellTitle">
+                        Property Title *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sellTitle"
+                        maxlength="80"
+                        placeholder="Example: Modern 3 BHK Apartment"
+                        required
+                    >
+                </div>
+
+                <div class="sell-row">
+
+                    <div class="sell-field">
+                        <label for="sellCity">
+                            City *
+                        </label>
+
+                        <select id="sellCity" required>
+                            <option value="">Select City</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Madurai">Madurai</option>
+                        </select>
+                    </div>
+
+                    <div class="sell-field">
+                        <label for="sellType">
+                            Property Type *
+                        </label>
+
+                        <select id="sellType" required>
+                            <option value="">Select Type</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Independent House">
+                                Independent House
+                            </option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="sell-row">
+
+                    <div class="sell-field">
+                        <label for="sellPrice">
+                            Asking Price (₹) *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="sellPrice"
+                            min="100000"
+                            max="1000000000"
+                            step="1000"
+                            placeholder="Example: 4500000"
+                            required
+                        >
+                    </div>
+
+                    <div class="sell-field">
+                        <label for="sellArea">
+                            Area (Sq.ft) *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="sellArea"
+                            min="200"
+                            max="10000"
+                            placeholder="Example: 1500"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="sell-row">
+
+                    <div class="sell-field">
+                        <label for="sellBedrooms">
+                            Bedrooms *
+                        </label>
+
+                        <select id="sellBedrooms" required>
+                            <option value="">Select</option>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="5">5 BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="sell-field">
+                        <label for="sellBathrooms">
+                            Bathrooms *
+                        </label>
+
+                        <select id="sellBathrooms" required>
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="sell-field">
+                    <label for="sellAge">
+                        Property Age (Years) *
+                    </label>
+
+                    <input
+                        type="number"
+                        id="sellAge"
+                        min="0"
+                        max="100"
+                        placeholder="Example: 5"
+                        required
+                    >
+                </div>
+
+                <div class="sell-field">
+                    <label for="sellDescription">
+                        Property Description *
+                    </label>
+
+                    <textarea
+                        id="sellDescription"
+                        rows="5"
+                        minlength="20"
+                        maxlength="1000"
+                        placeholder="Describe your property, nearby facilities and important features..."
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- IMAGE UPLOAD -->
+                <div class="sell-field">
+
+                    <label for="sellImage">
+                        Property Photo
+                    </label>
+
+                    <div class="sell-upload-box">
+
+                        <span class="sell-upload-icon">
+                            📷
+                        </span>
+
+                        <h3>Upload a Property Photo</h3>
+
+                        <p>
+                            JPG, PNG or WebP.
+                            Maximum file size: 2 MB.
+                        </p>
+
+                        <input
+                            type="file"
+                            id="sellImage"
+                            accept="image/jpeg,image/png,image/webp"
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="sell-form-actions">
+
+                    <button
+                        type="button"
+                        id="sellPreviewButton"
+                        class="sell-preview-button"
+                    >
+                        Preview Listing
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="sell-submit-button"
+                    >
+                        Save Listing
+                    </button>
+
+                </div>
+
+                <p
+                    id="sellMessage"
+                    class="sell-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+        <!-- PREVIEW -->
+        <aside class="sell-preview-section">
+
+            <div class="sell-preview-card">
+
+                <h2>Listing Preview</h2>
+
+                <p>
+                    Your property preview will
+                    appear below.
+                </p>
+
+                <div id="sellPreview">
+
+                    <div class="sell-preview-placeholder">
+                        <span>🏡</span>
+
+                        <h3>Your Property</h3>
+
+                        <p>
+                            Complete the form and click
+                            Preview Listing.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sell-help-card">
+
+                <h3>Need a Price Estimate?</h3>
+
+                <p>
+                    Use our house price prediction
+                    tool to explore an estimated
+                    value for your property.
+                </p>
+
+                <a href="prediction.html">
+                    Predict Property Price →
+                </a>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- SAVED LISTINGS -->
+    <section class="sell-saved-section">
+
+        <div class="sell-saved-heading">
+
+            <h2>Your Saved Listings</h2>
+
+            <p>
+                Demonstration listings saved
+                in this browser.
+            </p>
+
+        </div>
+
+        <div
+            id="sellSavedListings"
+            class="sell-saved-grid"
+        ></div>
+
+        <p
+            id="sellNoListings"
+            class="sell-no-listings"
+        >
+            You haven't saved any listings yet.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>RealEstateAI</h2>
+
+        <p>
+            House Price Prediction and
+            Property Recommendation System
+        </p>
+
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="../js/sell.js"></script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sell Property | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="buy.html">Buy</a>
+            <a href="rent.html">Rent</a>
+            <a href="sell.html" class="active">Sell</a>
+            <a href="prediction.html">Predict Price</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+    </header>
+
+    <!-- HERO -->
+    <section class="sell-hero">
+
+        <span class="sell-tag">
+            LIST YOUR PROPERTY
+        </span>
+
+        <h1>Sell Your Property</h1>
+
+        <p>
+            Create your property listing in a few
+            simple steps and preview how it will look.
+        </p>
+
+    </section>
+
+    <!-- MAIN -->
+    <main class="sell-container">
+
+        <!-- PROPERTY FORM -->
+        <section class="sell-form-card">
+
+            <div class="sell-section-heading">
+                <h2>Property Information</h2>
+
+                <p>
+                    Enter the details of the property
+                    you want to sell.
+                </p>
+            </div>
+
+            <form id="sellForm">
+
+                <div class="sell-field">
+                    <label for="sellTitle">
+                        Property Title *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sellTitle"
+                        maxlength="80"
+                        placeholder="Example: Modern 3 BHK Apartment"
+                        required
+                    >
+                </div>
+
+                <div class="sell-row">
+
+                    <div class="sell-field">
+                        <label for="sellCity">
+                            City *
+                        </label>
+
+                        <select id="sellCity" required>
+                            <option value="">Select City</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Madurai">Madurai</option>
+                        </select>
+                    </div>
+
+                    <div class="sell-field">
+                        <label for="sellType">
+                            Property Type *
+                        </label>
+
+                        <select id="sellType" required>
+                            <option value="">Select Type</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Independent House">
+                                Independent House
+                            </option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="sell-row">
+
+                    <div class="sell-field">
+                        <label for="sellPrice">
+                            Asking Price (₹) *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="sellPrice"
+                            min="100000"
+                            max="1000000000"
+                            step="1000"
+                            placeholder="Example: 4500000"
+                            required
+                        >
+                    </div>
+
+                    <div class="sell-field">
+                        <label for="sellArea">
+                            Area (Sq.ft) *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="sellArea"
+                            min="200"
+                            max="10000"
+                            placeholder="Example: 1500"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="sell-row">
+
+                    <div class="sell-field">
+                        <label for="sellBedrooms">
+                            Bedrooms *
+                        </label>
+
+                        <select id="sellBedrooms" required>
+                            <option value="">Select</option>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="5">5 BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="sell-field">
+                        <label for="sellBathrooms">
+                            Bathrooms *
+                        </label>
+
+                        <select id="sellBathrooms" required>
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="sell-field">
+                    <label for="sellAge">
+                        Property Age (Years) *
+                    </label>
+
+                    <input
+                        type="number"
+                        id="sellAge"
+                        min="0"
+                        max="100"
+                        placeholder="Example: 5"
+                        required
+                    >
+                </div>
+
+                <div class="sell-field">
+                    <label for="sellDescription">
+                        Property Description *
+                    </label>
+
+                    <textarea
+                        id="sellDescription"
+                        rows="5"
+                        minlength="20"
+                        maxlength="1000"
+                        placeholder="Describe your property, nearby facilities and important features..."
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- IMAGE UPLOAD -->
+                <div class="sell-field">
+
+                    <label for="sellImage">
+                        Property Photo
+                    </label>
+
+                    <div class="sell-upload-box">
+
+                        <span class="sell-upload-icon">
+                            📷
+                        </span>
+
+                        <h3>Upload a Property Photo</h3>
+
+                        <p>
+                            JPG, PNG or WebP.
+                            Maximum file size: 2 MB.
+                        </p>
+
+                        <input
+                            type="file"
+                            id="sellImage"
+                            accept="image/jpeg,image/png,image/webp"
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="sell-form-actions">
+
+                    <button
+                        type="button"
+                        id="sellPreviewButton"
+                        class="sell-preview-button"
+                    >
+                        Preview Listing
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="sell-submit-button"
+                    >
+                        Save Listing
+                    </button>
+
+                </div>
+
+                <p
+                    id="sellMessage"
+                    class="sell-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+        <!-- PREVIEW -->
+        <aside class="sell-preview-section">
+
+            <div class="sell-preview-card">
+
+                <h2>Listing Preview</h2>
+
+                <p>
+                    Your property preview will
+                    appear below.
+                </p>
+
+                <div id="sellPreview">
+
+                    <div class="sell-preview-placeholder">
+                        <span>🏡</span>
+
+                        <h3>Your Property</h3>
+
+                        <p>
+                            Complete the form and click
+                            Preview Listing.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sell-help-card">
+
+                <h3>Need a Price Estimate?</h3>
+
+                <p>
+                    Use our house price prediction
+                    tool to explore an estimated
+                    value for your property.
+                </p>
+
+                <a href="prediction.html">
+                    Predict Property Price →
+                </a>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- SAVED LISTINGS -->
+    <section class="sell-saved-section">
+
+        <div class="sell-saved-heading">
+
+            <h2>Your Saved Listings</h2>
+
+            <p>
+                Demonstration listings saved
+                in this browser.
+            </p>
+
+        </div>
+
+        <div
+            id="sellSavedListings"
+            class="sell-saved-grid"
+        ></div>
+
+        <p
+            id="sellNoListings"
+            class="sell-no-listings"
+        >
+            You haven't saved any listings yet.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>RealEstateAI</h2>
+
+        <p>
+            House Price Prediction and
+            Property Recommendation System
+        </p>
+
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="../js/sell.js"></script>
+
+</body>
+</html>

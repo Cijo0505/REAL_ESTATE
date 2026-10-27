@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Properties | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="buy.html">Buy</a>
+            <a href="rent.html">Rent</a>
+            <a href="prediction.html">Predict Price</a>
+            <a href="recommendation.html">Recommendations</a>
+        </nav>
+
+        <a href="favorites.html" class="login-btn">
+            ♡ Favorites
+        </a>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="properties-hero">
+        <h1>Explore Properties</h1>
+        <p>
+            Discover homes that match your budget,
+            location and lifestyle.
+        </p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="listing-layout">
+
+        <!-- FILTER SIDEBAR -->
+        <aside class="filter-panel">
+
+            <h2>Filter Properties</h2>
+
+            <form id="filterForm">
+
+                <div class="filter-group">
+                    <label for="filterLocation">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="filterLocation"
+                        placeholder="Search city"
+                    >
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterType">
+                        Property Type
+                    </label>
+
+                    <select id="filterType">
+                        <option value="">All Types</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Independent House">
+                            Independent House
+                        </option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterBudget">
+                        Maximum Budget
+                    </label>
+
+                    <select id="filterBudget">
+                        <option value="">Any Budget</option>
+                        <option value="2500000">₹25 Lakhs</option>
+                        <option value="5000000">₹50 Lakhs</option>
+                        <option value="7500000">₹75 Lakhs</option>
+                        <option value="10000000">₹1 Crore</option>
+                        <option value="20000000">₹2 Crore</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterBedrooms">
+                        Bedrooms
+                    </label>
+
+                    <select id="filterBedrooms">
+                        <option value="">Any</option>
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4 BHK</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="filter-btn">
+                    Apply Filters
+                </button>
+
+                <button type="button"
+                        id="resetFilters"
+                        class="reset-btn">
+                    Reset Filters
+                </button>
+
+            </form>
+
+        </aside>
+
+        <!-- PROPERTY RESULTS -->
+        <section class="listing-results">
+
+            <div class="results-header">
+
+                <div>
+                    <h2>Available Properties</h2>
+                    <p id="resultCount">
+                        Loading properties...
+                    </p>
+                </div>
+
+                <div class="sort-box">
+                    <label for="sortPrice">Sort by</label>
+
+                    <select id="sortPrice">
+                        <option value="default">
+                            Default
+                        </option>
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="listing-grid" id="propertyGrid">
+                <!-- JavaScript inserts property cards here -->
+            </div>
+
+            <p id="emptyMessage"
+               class="empty-message"
+               hidden>
+                No properties match your filters.
+                Try another location or budget.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>RealEstateAI</h2>
+        <p>
+            Smart House Price Prediction and
+            Property Recommendation System
+        </p>
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="../js/properties.js"></script>
+
+</body>
+</html>

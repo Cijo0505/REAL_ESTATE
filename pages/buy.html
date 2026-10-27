@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Buy Property | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="buy.html" class="active">Buy</a>
+            <a href="rent.html">Rent</a>
+            <a href="sell.html">Sell</a>
+            <a href="prediction.html">Predict Price</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+    </header>
+
+    <!-- HERO -->
+    <section class="buy-hero">
+        <div class="buy-hero-content">
+            <span class="buy-eyebrow">
+                FIND YOUR NEXT HOME
+            </span>
+
+            <h1>Find a Property to Buy</h1>
+
+            <p>
+                Explore apartments, villas and independent
+                houses that match your needs and budget.
+            </p>
+
+            <a href="#buyListings" class="buy-hero-button">
+                Explore Properties
+            </a>
+        </div>
+    </section>
+
+    <!-- QUICK SEARCH -->
+    <section class="buy-search-section">
+
+        <form id="buySearchForm" class="buy-search-form">
+
+            <div class="buy-search-field">
+                <label for="buyCity">Location</label>
+
+                <select id="buyCity">
+                    <option value="">All Cities</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                </select>
+            </div>
+
+            <div class="buy-search-field">
+                <label for="buyType">Property Type</label>
+
+                <select id="buyType">
+                    <option value="">All Types</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Independent House">
+                        Independent House
+                    </option>
+                </select>
+            </div>
+
+            <div class="buy-search-field">
+                <label for="buyBudget">Maximum Budget</label>
+
+                <select id="buyBudget">
+                    <option value="">Any Budget</option>
+                    <option value="2500000">₹25 Lakh</option>
+                    <option value="5000000">₹50 Lakh</option>
+                    <option value="7500000">₹75 Lakh</option>
+                    <option value="10000000">₹1 Crore</option>
+                    <option value="15000000">₹1.5 Crore</option>
+                </select>
+            </div>
+
+            <button type="submit" class="buy-search-button">
+                Search Properties
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- PROPERTY LISTINGS -->
+    <main id="buyListings" class="buy-listings">
+
+        <div class="buy-section-heading">
+
+            <div>
+                <span class="buy-section-tag">
+                    PROPERTIES FOR SALE
+                </span>
+
+                <h2>Explore Available Properties</h2>
+
+                <p id="buyResultCount" aria-live="polite">
+                    Loading properties...
+                </p>
+            </div>
+
+            <select id="buySort"
+                    aria-label="Sort properties">
+                <option value="default">
+                    Featured Properties
+                </option>
+                <option value="price-low">
+                    Price: Low to High
+                </option>
+                <option value="price-high">
+                    Price: High to Low
+                </option>
+                <option value="area-high">
+                    Largest Area
+                </option>
+            </select>
+
+        </div>
+
+        <div id="buyPropertyGrid"
+             class="buy-property-grid">
+        </div>
+
+        <div id="buyEmpty"
+             class="buy-empty"
+             hidden>
+
+            <div class="buy-empty-icon">🏠</div>
+
+            <h3>No Properties Found</h3>
+
+            <p>
+                Try changing your location,
+                property type or budget.
+            </p>
+
+            <button id="buyClearFilters"
+                    type="button">
+                Clear Filters
+            </button>
+
+        </div>
+
+    </main>
+
+    <!-- BUYING GUIDE -->
+    <section class="buy-guide">
+
+        <div class="buy-guide-heading">
+            <span class="buy-section-tag">
+                YOUR HOME BUYING JOURNEY
+            </span>
+
+            <h2>Simple Steps to Buying a Home</h2>
+
+            <p>
+                Explore properties, estimate their
+                value and plan your finances.
+            </p>
+        </div>
+
+        <div class="buy-guide-grid">
+
+            <article class="buy-guide-card">
+                <div class="buy-guide-icon">🔎</div>
+                <h3>1. Explore Properties</h3>
+                <p>
+                    Browse homes and filter by location,
+                    price and property type.
+                </p>
+            </article>
+
+            <article class="buy-guide-card">
+                <div class="buy-guide-icon">📊</div>
+                <h3>2. Estimate the Price</h3>
+                <p>
+                    Use our house price prediction tool
+                    to explore estimated property values.
+                </p>
+
+                <a href="prediction.html">
+                    Predict Price →
+                </a>
+            </article>
+
+            <article class="buy-guide-card">
+                <div class="buy-guide-icon">🏦</div>
+                <h3>3. Plan Your Loan</h3>
+                <p>
+                    Calculate your estimated monthly
+                    home loan payments.
+                </p>
+
+                <a href="loan.html">
+                    Loan Calculator →
+                </a>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="buy-cta">
+
+        <h2>Not Sure Which Property to Choose?</h2>
+
+        <p>
+            Find properties that match your preferences
+            using our recommendation system.
+        </p>
+
+        <a href="recommendation.html">
+            Get Recommendations
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>RealEstateAI</h2>
+
+        <p>
+            House Price Prediction and
+            Property Recommendation System
+        </p>
+
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="../js/buy.js"></script>
+
+</body>
+</html>

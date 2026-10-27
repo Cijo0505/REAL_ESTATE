@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RealEstate AI | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pages/properties.html">Properties</a>
+            <a href="pages/buy.html">Buy</a>
+            <a href="pages/rent.html">Rent</a>
+            <a href="pages/prediction.html">Predict Price</a>
+            <a href="pages/recommendation.html">
+                Recommendations
+            </a>
+        </nav>
+
+        <a href="pages/login.html" class="login-btn">
+            Login
+        </a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Home With AI</h1>
+
+            <p>
+                Discover your dream property with smart
+                house price prediction and personalized
+                property recommendations.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="pages/properties.html"
+                   class="btn-primary">
+                    Explore Properties
+                </a>
+
+                <a href="pages/prediction.html"
+                   class="btn-outline">
+                    Predict House Price
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+        <h2>Find Your Dream Property</h2>
+        <p>Search properties based on your preferences.</p>
+
+        <form class="search-box" id="searchForm">
+
+            <input type="text"
+                   id="location"
+                   placeholder="Enter City or Location">
+
+            <select id="propertyType">
+                <option value="">Property Type</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Villa">Villa</option>
+                <option value="Independent House">
+                    Independent House
+                </option>
+            </select>
+
+            <select id="budget">
+                <option value="">Select Budget</option>
+                <option value="2500000">
+                    Below ₹25 Lakhs
+                </option>
+                <option value="5000000">
+                    Below ₹50 Lakhs
+                </option>
+                <option value="10000000">
+                    Below ₹1 Crore
+                </option>
+            </select>
+
+            <button type="submit" class="btn-primary">
+                Search
+            </button>
+        </form>
+    </section>
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="properties-section">
+        <h2>Featured Properties</h2>
+        <p>Explore our selected properties.</p>
+
+        <div class="property-container">
+
+            <div class="property-card">
+                <img src="images/mod apmt.jpg"
+                     alt="Modern apartment">
+
+                <div class="property-info">
+                    <h3>Modern Apartment</h3>
+                    <p>Chennai, Tamil Nadu</p>
+                    <h3 class="price">₹45,00,000</h3>
+                    <p>3 BHK | 1500 Sq.ft</p>
+
+                    <a href="pages/properties.html"
+                       class="btn-primary">
+                        View Properties
+                    </a>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="images/home8.webp"
+                     alt="Luxury villa">
+
+                <div class="property-info">
+                    <h3>Luxury Villa</h3>
+                    <p>Bangalore, Karnataka</p>
+                    <h3 class="price">₹95,00,000</h3>
+                    <p>4 BHK | 2400 Sq.ft</p>
+
+                    <a href="pages/properties.html"
+                       class="btn-primary">
+                        View Properties
+                    </a>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="images/home1.avif"
+                     alt="Family house">
+
+                <div class="property-info">
+                    <h3>Family House</h3>
+                    <p>Coimbatore, Tamil Nadu</p>
+                    <h3 class="price">₹60,00,000</h3>
+                    <p>3 BHK | 1800 Sq.ft</p>
+
+                    <a href="pages/properties.html"
+                       class="btn-primary">
+                        View Properties
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AI FEATURES -->
+    <section class="features-section">
+        <h2>Our Smart AI Features</h2>
+
+        <div class="features-container">
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>House Price Prediction</h3>
+                <p>
+                    Estimate property prices using
+                    machine learning.
+                </p>
+                <a href="pages/prediction.html">
+                    Predict Now →
+                </a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏡</div>
+                <h3>Property Recommendation</h3>
+                <p>
+                    Discover properties matching
+                    your budget and requirements.
+                </p>
+                <a href="pages/recommendation.html">
+                    Get Recommendations →
+                </a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Home Loan Calculator</h3>
+                <p>
+                    Calculate your estimated monthly
+                    home loan payments.
+                </p>
+                <a href="pages/loan.html">
+                    Calculate Now →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+        <h2>Start Your Property Journey Today</h2>
+        <p>Find a home that matches your needs.</p>
+
+        <a href="pages/register.html"
+           class="btn-primary">
+            Get Started
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>RealEstateAI</h2>
+        <p>
+            Machine Learning-Based House Price Prediction
+            and Property Recommendation System
+        </p>
+
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

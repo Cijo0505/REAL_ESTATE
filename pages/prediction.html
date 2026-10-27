@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>House Price Prediction | RealEstateAI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            RealEstate<span>AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="prediction.html">Predict Price</a>
+            <a href="recommendation.html">Recommendations</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+    </header>
+
+    <!-- HERO -->
+    <section class="prediction-hero">
+        <h1>AI House Price Prediction</h1>
+
+        <p>
+            Enter your property details to estimate
+            its price using machine learning.
+        </p>
+    </section>
+
+    <!-- MAIN -->
+    <main class="prediction-container">
+
+        <!-- PREDICTION FORM -->
+        <section class="prediction-card">
+
+            <h2>Enter Property Details</h2>
+
+            <p class="prediction-subtitle">
+                Fill in the information below.
+            </p>
+
+            <form id="predictionForm">
+
+                <div class="prediction-group">
+                    <label for="city">Property Location</label>
+
+                    <select id="city" required>
+                        <option value="">Select City</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Madurai">Madurai</option>
+                    </select>
+                </div>
+
+                <div class="prediction-group">
+                    <label for="area">
+                        Property Area (Sq.ft)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="area"
+                        placeholder="Example: 1500"
+                        min="200"
+                        max="10000"
+                        required
+                    >
+                </div>
+
+                <div class="prediction-row">
+
+                    <div class="prediction-group">
+                        <label for="bedrooms">
+                            Bedrooms
+                        </label>
+
+                        <select id="bedrooms" required>
+                            <option value="">Select</option>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="5">5 BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="prediction-group">
+                        <label for="bathrooms">
+                            Bathrooms
+                        </label>
+
+                        <select id="bathrooms" required>
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="prediction-group">
+                    <label for="propertyType">
+                        Property Type
+                    </label>
+
+                    <select id="propertyType" required>
+                        <option value="">Select Type</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Independent House">
+                            Independent House
+                        </option>
+                    </select>
+                </div>
+
+                <div class="prediction-group">
+                    <label for="propertyAge">
+                        Property Age (Years)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="propertyAge"
+                        min="0"
+                        max="100"
+                        placeholder="Example: 5"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    id="predictButton"
+                    class="predict-submit"
+                >
+                    Predict House Price
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- RESULT -->
+        <section class="prediction-result-card">
+
+            <div class="prediction-result-icon">
+                🏡
+            </div>
+
+            <h2>Estimated Property Price</h2>
+
+            <p>
+                Your machine learning prediction
+                will appear here.
+            </p>
+
+            <div id="predictionResult"
+                 class="prediction-result"
+                 aria-live="polite">
+
+                <span class="result-placeholder">
+                    Enter property details to begin.
+                </span>
+
+            </div>
+
+            <p id="predictionMessage"
+               class="prediction-message"
+               role="status"
+               aria-live="polite">
+            </p>
+
+            <div class="prediction-disclaimer">
+                Estimates are for educational purposes.
+                They are not professional property valuations.
+            </div>
+
+            <a href="properties.html"
+               class="prediction-explore">
+                Explore Available Properties →
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- HOW IT WORKS -->
+    <section class="prediction-how">
+
+        <h2>How Price Prediction Works</h2>
+
+        <div class="prediction-steps">
+
+            <div class="prediction-step">
+                <span>01</span>
+                <h3>Enter Details</h3>
+                <p>
+                    Provide the property's location,
+                    area, bedrooms and other features.
+                </p>
+            </div>
+
+            <div class="prediction-step">
+                <span>02</span>
+                <h3>Machine Learning</h3>
+                <p>
+                    The trained regression model
+                    analyzes the supplied features.
+                </p>
+            </div>
+
+            <div class="prediction-step">
+                <span>03</span>
+                <h3>Get Your Estimate</h3>
+                <p>
+                    View the predicted property price
+                    in Indian rupees.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <h2>RealEstateAI</h2>
+        <p>House Price Prediction and Recommendation System</p>
+        <p>© 2026 RealEstateAI</p>
+    </footer>
+
+    <script src="../js/prediction.js"></script>
+
+</body>
+</html>
